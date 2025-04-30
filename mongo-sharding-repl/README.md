@@ -18,23 +18,21 @@ bash ./scripts/init-mongo-shard.sh shard2 27019
 
 # Настройка роутеров
 bash ./scripts/init-mongo-router.sh mongos_router1 27020
-# bash ./scripts/init-mongo-router.sh mongos_router2 27020
 
-# Заполнение данными роутеров
+# Заполнение данными
 bash ./scripts/seed-mongo-db.sh mongos_router1 27020
-bash ./scripts/seed-mongo-db.sh mongos_router2 27020
 
 # Проверка настроек роутера
 bash ./scripts/check-mongo-router.sh mongos_router1 27020
 bash ./scripts/check-mongo-router.sh mongos_router2 27020
 
 # Проверка шардов на заполнение
-bash ./scripts/check-mongo-shard.sh shard1_r0 27018 # 984
-bash ./scripts/check-mongo-shard.sh shard1_r1 27018 # 984
-bash ./scripts/check-mongo-shard.sh shard1_r2 27018 # 984
-bash ./scripts/check-mongo-shard.sh shard2_r0 27019 # 1016
-bash ./scripts/check-mongo-shard.sh shard2_r1 27019 # 1016
-bash ./scripts/check-mongo-shard.sh shard2_r2 27019 # 1016
+bash ./scripts/check-mongo-shard.sh shard1_r0 27018 # 492
+bash ./scripts/check-mongo-shard.sh shard1_r1 27018 # 492
+bash ./scripts/check-mongo-shard.sh shard1_r2 27018 # 492
+bash ./scripts/check-mongo-shard.sh shard2_r0 27019 # 508
+bash ./scripts/check-mongo-shard.sh shard2_r1 27019 # 508
+bash ./scripts/check-mongo-shard.sh shard2_r2 27019 # 508
 ```
 
 ## Как проверить
