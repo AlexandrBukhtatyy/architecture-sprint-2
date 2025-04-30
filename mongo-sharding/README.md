@@ -5,8 +5,6 @@
 **ВНИМАНИЕ !**<br/>
 В Windows команды нужно запускать из git bash
 
-Запускаем mongodb и приложение
-
 ```shell
 # Запуск сервисов
 docker compose up -d
@@ -31,13 +29,6 @@ bash ./scripts/check-mongo-shard.sh shard1 27018 # В ответе дожно б
 bash ./scripts/check-mongo-shard.sh shard2 27019 # В ответе дожно быть: 1016
 ```
 
-## Как Остановить
-
-```shell
-# Остановка приложения и зачистка ресурсов
-docker compose down --remove-orphans --volumes
-```
-
 ## Как проверить
 
 ### Если вы запускаете проект на локальной машине
@@ -53,6 +44,13 @@ curl --silent http://ifconfig.me
 ```
 
 Откройте в браузере http://<ip виртуальной машины>:8080
+
+## Как Остановить
+
+```shell
+# Остановка приложения и зачистка ресурсов
+docker compose down --remove-orphans --volumes
+```
 
 ## Доступные эндпоинты
 
