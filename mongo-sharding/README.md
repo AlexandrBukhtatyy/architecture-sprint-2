@@ -5,8 +5,6 @@
 **ВНИМАНИЕ !**<br/>
 В Windows команды нужно запускать из git bash
 
-Запускаем mongodb и приложение
-
 ```shell
 # Запуск сервисов
 docker compose up -d
