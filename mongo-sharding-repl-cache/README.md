@@ -61,3 +61,6 @@ docker compose down --remove-orphans --volumes
 ## Доступные эндпоинты
 
 Список доступных эндпоинтов, swagger http://<ip виртуальной машины>:8080/docs
+
+## Схема приложения
+[ссылка](https://drive.google.com/file/d/1-rKprNPq1-ESYGK58uTIPTFdRinAjKGa/view?usp=drive_link)
