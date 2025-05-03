@@ -1,11 +1,18 @@
 # pymongo-api
 
+## Схема приложения
+Файл со схемой находится внутри репозитория task1.drawio
+Если хочется открыть онлайн то схема доступна по [ссылке](https://drive.google.com/file/d/1-rKprNPq1-ESYGK58uTIPTFdRinAjKGa/view?usp=drive_link)
+
 ## Как запустить
 
 **ВНИМАНИЕ !**<br/>
 В Windows команды нужно запускать из git bash
 
 ```shell
+# Перейти в каталог с проектом
+cd ./sharding-repl-cache
+
 # Запуск сервисов
 docker compose up -d
 
@@ -61,6 +68,3 @@ docker compose down --remove-orphans --volumes
 ## Доступные эндпоинты
 
 Список доступных эндпоинтов, swagger http://<ip виртуальной машины>:8080/docs
-
-## Схема приложения
-[ссылка](https://drive.google.com/file/d/1-rKprNPq1-ESYGK58uTIPTFdRinAjKGa/view?usp=drive_link)
